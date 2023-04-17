@@ -3,18 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom';
 
 import AppContextProvider from './components/context/appContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <Router>
     <AppContextProvider>
     <App />
     </AppContextProvider>
-    </BrowserRouter>
+    </Router>
   </React.StrictMode>
 );
 
